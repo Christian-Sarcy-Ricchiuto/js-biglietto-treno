@@ -34,4 +34,14 @@ const priceMessage = 'Il tuo biglietto costerà: €'
 // Possibile sconto
 let discount = null;
 
+/* FASE DI RACCOLTA DATI */
+
+// Chiedo all'utente quanti kilometri deve percorrere e la sua età
+const Km = parseInt(prompt('Quanti Kilometri vuoi percorrere?', 1200));
+const Age =parseInt(prompt('Quanti anni hai?', 32));
+console.log ('Km', Km);
+console.log ('Età', Age);
+
+/* FASE DI ELABORAZIONE */
+
 
