@@ -44,4 +44,9 @@ console.log ('Età', Age);
 
 /* FASE DI ELABORAZIONE */
 
+// Calcolo del prezzo base
+const basePrice = Km * priceXkm;
+let ticketPrice = basePrice;
 
+// Output
+totalElement.innerText= priceMessage, ticketPrice;
