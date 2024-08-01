@@ -23,13 +23,13 @@ Abbellire col CSS
 // Recupero degli elementi d'interesse dal DOM 
 
 const billElement = document.getElementById('bill');
-const discountlElement = document.getElementById('discount')
+const discountlElement = document.getElementById('discount');
 
 // Costo per Km 
-const pricXkm = 0.21;
+const priceXkm = 0.21;
 
 // Messaggio prezzo
-const priceMessage = 'Il tuo biglietto costerà: €' 
+const priceMessage = 'Il tuo biglietto costerà:€'; 
 
 // Possibile sconto
 let discount = null;
@@ -48,5 +48,11 @@ console.log ('Età', Age);
 const basePrice = Km * priceXkm;
 let ticketPrice = basePrice;
 
+if(Age >= 65){
+    ticketPrice *= 0.6;
+    }else if( Age < 18) {
+    ticketPrice *= 0.4;
+    }
+
 // Output
-totalElement.innerText= priceMessage, ticketPrice;
+billElement.innerText = priceMessage + ticketPrice.toFixed(2);
